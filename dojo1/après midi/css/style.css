@@ -1,0 +1,193 @@
+body{
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+header{
+background-color: #cccccc;
+border: 1px solid #cccccc;
+width: 100% !important;
+height: 230px;
+}
+
+.tete{
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    width: 17%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.cercle1{
+    background-color: #7c7c7c;
+    border-radius: 50%;
+    width: 17%;
+    height: 17%;
+    margin: 45px 0 0 74px;
+    float: left;
+}
+
+.cercle2{
+    background-color: #7c7c7c;
+    border-radius: 50%;
+    width: 17%;
+    height: 17%;
+    margin: 45px 0 0 46px;
+    float: left;
+}
+
+.sourie{
+    border: 1px solid #7a7a7a;
+    background-color: #7a7a7a;
+    width: 44%;
+    height: 3%;
+    margin: 159px 0 0 81px;
+}
+
+.sourie1{
+    border: 1px solid #afafaf;
+    background-color: #afafaf;
+    width: 79%;
+    float: left;
+    height: 66%;
+    margin: 0 0 0 12px;
+}
+
+.espacement1{
+    background-color:#b2b2b2;
+    border:1px solid #b2b2b2;
+    width: 100% !important;
+    height: 33px;
+}
+
+.cou{
+    border:1px solid #efefef;
+    background-color:#efefef ;
+    width: 4%;
+    height: 33px;
+    margin: auto;
+}
+
+section{
+    background-color: #999999;
+    border: 1px solid #999999;
+    width: 100% !important;
+    height: 414px;
+}
+
+.bras_g{
+    border:1px solid #e0e0e0;
+    background-color:#e0e0e0;
+    width: 5%;
+    height: 100%;
+    margin-top: -417px;
+    margin-left: 524px;
+    float: left;
+    animation: bras_g 2s infinite;
+    transform-origin: 0% 0%;
+   /* transition: 0.5s ease-in;*/
+}
+
+/*.corps:hover + .bras_g{
+    transform: rotate(150deg);
+}
+
+.corps:hover + .bras_d{
+    transform: rotate(-150deg);
+}*/
+
+  @keyframes bras_g {
+    0%   {transform: rotate(0deg); top: 23px; left: 0px; background: red;}
+    10%   {transform: rotate(10deg); top: 23px; left: 0px; background: orange;}
+    25%  {transform: rotate(25deg); top: 23px; left: 100px; background: blue;}
+    35%  {transform: rotate(35deg); top: 23px; left: 100px; background: aquamarine;}
+    50%  {transform: rotate(50deg); top: 100px; left: 100px; background: yellow;}
+    60%  {transform: rotate(60deg); top: 100px; left: 100px; background: green;}
+    75%  {transform: rotate(75deg); top: 100px; left: 0px; background: black;}
+    90% {transform: rotate(90deg); top: 23px; left: 0px; background: rgb(118, 32, 129);}
+    100% {transform: rotate(100deg); top: 23px; left: 0px; background: rgb(58, 173, 106);}
+    150% {transform: rotate(150deg); top: 23px; left: 0px; background: rgb(172, 141, 42);}
+    190% {transform: rotate(190deg); top: 23px; left: 0px; background: rgb(42, 98, 172);}
+  }
+
+  @keyframes bras_d {
+    0%   {transform: rotate(0deg); top: 23px; left: 0px; background: red;}
+    10%   {transform: rotate(10deg); top: 23px; left: 0px; background: orange;}
+    25%  {transform: rotate(25deg); top: 23px; left: 100px; background: blue;}
+    35%  {transform: rotate(35deg); top: 23px; left: 100px; background: aquamarine;}
+    50%  {transform: rotate(50deg); top: 100px; left: 100px; background: yellow;}
+    60%  {transform: rotate(60deg); top: 100px; left: 100px; background: green;}
+    75%  {transform: rotate(75deg); top: 100px; left: 0px; background: black;}
+    90% {transform: rotate(90deg); top: 23px; left: 0px; background: rgb(118, 32, 129);}
+    100% {transform: rotate(100deg); top: 23px; left: 0px; background: rgb(58, 173, 106);}
+    150% {transform: rotate(150deg); top: 23px; left: 0px; background: rgb(172, 141, 42);}
+    190% {transform: rotate(190deg); top: 23px; left: 0px; background: rgb(42, 98, 172);}
+  }
+
+.corps{
+    border:1px solid #e0e0e0;
+    background-color:#e0e0e0;
+    width: 21%;
+    height: 100%;
+    margin: auto;
+}
+
+.bras_d{
+    border:1px solid #e0e0e0;
+    background-color:#e0e0e0;
+    width: 5%;
+    height: 100%;
+    margin-top: -417px;
+    margin-right: 524px;
+    float: right;
+  /*  transition: 0.5s ease-in;*/
+    animation: bras_d 2s infinite;
+    transform-origin: 0% 0%;
+}
+
+footer{
+    border:1px solid #7f7f7f;
+    background-color:#7f7f7f;
+    width: 100% !important;
+    height: 324px;
+}
+
+.jambe_g{
+    border:1px solid #e0e0e0;
+    background-color:#e0e0e0;
+    width: 8%;
+    height: 260px;
+    margin-left: 673px;
+    float: left;
+}
+
+.jambe_d{
+    border:1px solid #e0e0e0;
+    background-color:#e0e0e0;
+    width: 8%;
+    height: 260px;
+    margin-right: 673px;
+    float: right;
+}
+
+.chaussure_g{
+    border: 1px solid #bfbfbf;
+    background-color: #bfbfbf;
+    width: 8%;
+    height: 50px;
+    margin-left: 673px;
+    margin-top: 9px;
+    float: left;
+}
+
+.chaussure_d{
+    border: 1px solid #bfbfbf;
+    background-color: #bfbfbf;
+    width: 8%;
+    height: 50px;
+    margin-right: 673px;
+    margin-top: 9px;
+    float: right;
+}
