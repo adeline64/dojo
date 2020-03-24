@@ -42,8 +42,11 @@ class ManagerArticle extends Manager{
 		//liaison des marqueur :toto aux donnees
 		$articles->bindValue('id',$id,PDO::PARAM_INT);
 		//execution de la requete sur le serveur SQL
-		$articles->execute();
-		return $articles->fetch();
+		if ($articles->execute() == true) {
+			return new article($articles->fetch());
+		}  else {
+			return FALSE;
+		}
 	}
 
 	public function add( $data) {

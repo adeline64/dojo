@@ -19,8 +19,6 @@ if (empty($_SESSION['utilisateur'])) {
 		{ include_once "code/html/parts/articles.php"; }
 		else if (!empty($_GET['page'])&& $_GET['page'] == 'article')
 		{ include_once "code/html/parts/article.php";}
-		else if (!empty($_GET['page'])&& $_GET['page'] == 'commentaire')
-	    { include_once "code/html/parts/commentaire.php";}
 	    else if (!empty($_GET['page'])&& $_GET['page'] == 'categorie')
 	    { include_once "code/html/parts/categorie.php";}
 	    else if (!empty($_GET['page'])&& $_GET['page'] == 'deconnexion')
