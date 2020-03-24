@@ -1,8 +1,16 @@
 <?php
+if (!isset($_GET['id'])) {
+    $idArticle = $_POST['id_article'];
+} else {
+    $idArticle = $_GET['id'];
+}
+
+
 //même non connecté on peut lire le blog
 $managerArticle = new ManagerArticle();
 $managerArticle->setDb($db);
-$article = $managerArticle->getArticle($_GET['id']);
+$article = $managerArticle->getArticle($idArticle);
+
 
 $managerCommentaire = new ManagerCommentaire();
 $managerCommentaire->setDb($db);
@@ -74,6 +82,7 @@ if (count($lescommentaires) == 0) {
             <h4>Titre : <?= $commentaire->getTitre(); ?></h4>
             <p>Date : <?= $commentaire->getDatePublication(); ?></p>
             <h5>Commentaire : <?= $commentaire->getContenu(); ?></h5>
+            <hr>
         </commentaire>
 
 <?php
